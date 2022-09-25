@@ -1,5 +1,6 @@
 # easyJewel
 Stocks management app made in Java Swing
+connected to an online store made by Arthur Glerean
 
 ![accueil](https://user-images.githubusercontent.com/91760938/192160308-db86d87a-57b1-42de-91b6-1c3910d7fd6f.png)
 
