@@ -5,17 +5,15 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
- * @author p2006969
+ * @author easyJewel
  */
 public class Connexion {
 
     Connection connexion;
+    //university database
     static final String DRIVER = "oracle.jdbc.OracleDriver";
     static final String BD_URL = "jdbc:oracle:thin:@iutdoua-ora.univ-lyon1.fr:1521:cdb1";
     static final String BD_USER = "p2006969";

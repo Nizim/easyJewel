@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modeles;
 
 /**
@@ -9,17 +6,52 @@ package modeles;
  * @author darch
  */
 public class Produit {
+    
     private int idProduit;
     private String libelleProduit;
-    private Categorie categorieProduit;
-    private Image imageProduit;
+    private float prix;
+    private String description;
     private int stockProduit;
+    private Categorie categorieProduit;
+    private int nbComm;
+    
 
-    public Produit(int idProduit, String libelleProduit, Categorie categorieProduit, int stockProduit) {
+    private int nbCommentaires;
+
+    public Produit(int idProduit, String libelleProduit, Float prix, String description, int stockProduit, Categorie categorieProduit, int nbComm) {
         this.idProduit = idProduit;
         this.libelleProduit = libelleProduit;
-        this.categorieProduit = categorieProduit;
+        this.prix = prix;
+        this.description = description;
         this.stockProduit = stockProduit;
+        this.categorieProduit = categorieProduit;
+        this.nbComm=nbComm;
+    }
+
+    public int getNbComm() {
+        return nbComm;
+    }
+
+    public void setNbComm(int nbComm) {
+        this.nbComm = nbComm;
+    }
+
+    
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    
+    public float getPrix() {
+        return prix;
+    }
+
+    public void setPrix(int prix) {
+        this.prix = prix;
     }
 
     public int getIdProduit() {
@@ -46,14 +78,6 @@ public class Produit {
         this.categorieProduit = categorieProduit;
     }
 
-    public Image getImageProduit() {
-        return imageProduit;
-    }
-
-    public void setImageProduit(Image imageProduit) {
-        this.imageProduit = imageProduit;
-    }
-
     public int getStockProduit() {
         return stockProduit;
     }
@@ -62,7 +86,13 @@ public class Produit {
         this.stockProduit = stockProduit;
     }
     
-    
+    public int getNbCommentaires() {
+        return nbCommentaires;
+    }
+
+    public void setNbCommentaires(int nbCommentaires) {
+        this.nbCommentaires = nbCommentaires;
+    }
     
     
     

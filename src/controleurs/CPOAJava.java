@@ -1,9 +1,5 @@
 package controleurs;
 
-import static controleurs.CCategorie.catMap;
-import java.util.HashMap;
-import javax.swing.DefaultListModel;
-import modeles.Categorie;
 import modeles.Connexion;
 import vues.Frame;
 
@@ -12,9 +8,19 @@ import vues.Frame;
  * @author yd / ag
  */
 public class CPOAJava {
+    
+    public static Connexion co;
 
     public static void main(String args[]) {
 
+        //Connexion JDBC
+        Connexion co = new Connexion();
+        //Init controleurs
+        CCategorie ccategorie = new CCategorie(co);
+        ccategorie.setCo(co);
+        CProduit cproduit = new CProduit(co);
+        cproduit.setCo(co);
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Frame().setVisible(true);
@@ -22,16 +28,9 @@ public class CPOAJava {
         });
 
         
-        //Connexion JDBC
-        Connexion co = new Connexion();
-        //Init controleurs
-        CCategorie ccategorie = new CCategorie();
-        ccategorie.getCategorieFromDB(co);
-        CProduit cproduit = new CProduit();
         
-        for (HashMap.Entry<Integer, Categorie> entry : catMap.entrySet()) {
-            System.out.println(entry.getKey() + "/" + entry.getValue().getNomCategorie());
-        }
+        
+        
    
         
     }
