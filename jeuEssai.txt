@@ -1,0 +1,118 @@
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into P2006969.CATEGORIE
+SET DEFINE OFF;
+Insert into P2006969.CATEGORIE (IDCAT,LIBELLECAT) values ('1','Bague');
+Insert into P2006969.CATEGORIE (IDCAT,LIBELLECAT) values ('2','Bracelet');
+Insert into P2006969.CATEGORIE (IDCAT,LIBELLECAT) values ('3','Chaine');
+Insert into P2006969.CATEGORIE (IDCAT,LIBELLECAT) values ('4','Montre');
+commit;
+
+
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into COMMANDE
+SET DEFINE OFF;
+Insert into COMMANDE (IDCOMMANDE,IDUTILISATEUR,PRIX,DATE_LIVRAISON,ETAT) values ('6','6','47,97',to_date('30/06/22','DD/MM/RR'),'4');
+Insert into COMMANDE (IDCOMMANDE,IDUTILISATEUR,PRIX,DATE_LIVRAISON,ETAT) values ('6','6','15,99',to_date('30/06/22','DD/MM/RR'),'1');
+Insert into COMMANDE (IDCOMMANDE,IDUTILISATEUR,PRIX,DATE_LIVRAISON,ETAT) values ('6','6','15,99',to_date('30/06/22','DD/MM/RR'),'1');
+Insert into COMMANDE (IDCOMMANDE,IDUTILISATEUR,PRIX,DATE_LIVRAISON,ETAT) values ('7','7','31,98',to_date('30/06/22','DD/MM/RR'),'1');
+Insert into COMMANDE (IDCOMMANDE,IDUTILISATEUR,PRIX,DATE_LIVRAISON,ETAT) values ('7','7','15,99',to_date('30/06/22','DD/MM/RR'),'1');
+
+
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into COMMENTAIRES
+SET DEFINE OFF;
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('6','18','19-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('6','19','19-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('6','17','19-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('6','16','20-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('7','11','20-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('7','2','20-06-22');
+Insert into COMMENTAIRES (ID_SOURCE_UTILISATEUR,ID_SOURCE_PRODUIT,DATE_POSTE) values ('7','20','20-06-22');
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into LIGNE_PRODUIT
+SET DEFINE OFF;
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into LOT_IMAGES
+SET DEFINE OFF;
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('1','1');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('15','15');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('14','14');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('13','13');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('12','12');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('11','11');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('2','2');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('3','3');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('4','4');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('5','5');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('6','6');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('7','7');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('8','8');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('9','9');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('10','10');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('16','16');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('17','17');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('18','18');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('19','19');
+Insert into LOT_IMAGES (NUM_LOT_IMAGES,NUM_PRODUIT) values ('20','20');
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into PANIER
+SET DEFINE OFF;
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into PRODUITS
+SET DEFINE OFF;
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('2','Anneau dragon chinois texturé','15,99','Cette bague sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','1','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('3','Anneau avec strass','15,99','Cette bague sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','10','1','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('4','Anneau en acier inoxydable','15,99','Cette bague sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','1','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('5','Anneau minimaliste double tracé','15,99','Cette bague sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','1','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('6','Collier à breloque géométrique','15,99','Cette chaine sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','3','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('7','Collier minimaliste','15,99','Cette chaine sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','3','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('8','Collier à pendentif football','15,99','Cette chaine sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','3','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('9','Collier à détail géométrique','15,99','Cette chaine sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','3','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('10','Collier à chaîne avec strass','15,99','Cette chaine sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','3','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('11','Montre à quartz à cadran triple','15,99','Cette montre sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','4','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('12','Montre à quartz à pointeur rond','15,99','Cette montre sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','4','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('13','Montre à quartz doré','15,99','Cette montre sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','4','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('14','Montre à quartz bleue','15,99','Cette montre sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','4','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('15','Montre éléctronique LED ronde','15,99','Cette montre sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','5','4','0');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('16','Bracelet minimaliste fin','15,99','Ce bracelet sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','2','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('17','Bracelet minimaliste triple','15,99','Ce bracelet sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','8','2','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('19','Bracelet 3 pièces à détail de couronne','15,99','Ce bracelet sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','2','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('20','Bracelet minimaliste noir','15,99','Ce bracelet sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','2','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('18','Bracelet tressé minimaliste','15,99','Ce bracelet sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','2','1');
+Insert into PRODUITS (IDPRODUIT,LIBELLE,PRIX,DESCRIPTION,STOCK,IDCAT,NB_COMMENTAIRES) values ('1','Anneau minimaliste','15,99','Cette bague sera parfaite pour vous faire plaisir ! Avec un prix attractif, vous pourrez vous enfuyer dans votre vie et vous sentir comme un vrai homme ! ','0','1','0');
+
+
+--------------------------------------------------------
+--  Fichier créé - lundi-juin-20-2022   
+--------------------------------------------------------
+REM INSERTING into UTILISATEURS
+SET DEFINE OFF;
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('6','Arthur','adminIUT','admin','arthur.glerean@etu.univ-lyon1.fr','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('7','Yanis','adminIUT','admin','yanisdarchi4@gmail.com','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('3','Benoitdu38','az','client','arthur.glerean@gmail.com','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('5','paul','pauliut','client','paulK@gmail.com','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('10','Julien','julien2003','client','julien.2003@gmail.com','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('8','tristan','ap','client','trsitan@gmail.com','0');
+Insert into UTILISATEURS (IDENTIFIANT,NOM_UTILISATEUR,MOT_DE_PASSE,STATUT,MAIL,NBAVERTISSEMENT) values ('9','luis','luismdp','client','luisC@free.fr','0');
+
+
